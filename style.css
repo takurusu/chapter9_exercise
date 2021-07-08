@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  width: 100%;
+}
+
 .body-heading {
   background-color: #ff9a4b;
   height: 50px;
@@ -48,14 +52,17 @@
 
 .step-img1 {
   background-image: url(img/flow01.png);
+  background-position: bottom;
 }
 
 .step-img2 {
   background-image: url(img/flow02.png);
+  background-position: bottom;
 }
 
 .step-img3 {
   background-image: url(img/flow03.png);
+  background-position: bottom;
 }
 
 h3 {
@@ -69,4 +76,30 @@ h3 {
 .body-footer {
   background-color: #aaaaaa;
   height: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    width: 100%;
+  }
+
+  .body-heading {
+    width: 100%;
+  }
+
+  .contents {
+    width: 90%;
+    display: block;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .contents-item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .contents-item:last-child {
+    margin-bottom: 0;
+  }
 }
